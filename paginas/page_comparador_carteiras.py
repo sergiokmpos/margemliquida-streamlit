@@ -52,7 +52,7 @@ def main():
     alertas = st.empty()
 
     hoje = date.today()
-    ano_passado = date(hoje.year - 1, hoje.month, (hoje.day-2))#adicionado -1 no dia devido erro com ano bissexto
+    ano_passado = date(hoje.year - 1, hoje.month, hoje.day)
 
     with st.expander("**Adicionar carteira**", expanded=False):
         lista_ibovespa = [

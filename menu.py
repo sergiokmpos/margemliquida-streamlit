@@ -1,13 +1,13 @@
 class Menu:
     labels = [
         "Inicial",
-        "Panorama de Mercado",
         "Carteira",
         "Inflação",
         "Juros no Brasil",
         "Tesouro Direto",
         "Dias Consecutivos",
         "Comparativo de Fundamentos",
+        "Panorama de Mercado",
         "Rentabilidades mensais",
         "Dividendos",
         "Screening",
