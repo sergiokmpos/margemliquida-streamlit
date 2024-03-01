@@ -52,7 +52,14 @@ def main():
     alertas = st.empty()
 
     hoje = date.today()
-    ano_passado = date(hoje.year - 1, hoje.month, (hoje.day-2))#adicionado -1 no dia devido erro com ano bissexto
+
+    Mes = hoje.month
+    Dia = hoje.day
+
+    if Mes == 2 and Dia == 29: #adicionado -1 no dia devido erro com ano bissexto
+        Dia = 28
+        
+    ano_passado = date(hoje.year - 1, hoje.month, Dia)
 
     with st.expander("**Adicionar carteira**", expanded=False):
         lista_ibovespa = [

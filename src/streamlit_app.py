@@ -1,3 +1,5 @@
+#Coomando git streamlit run ./src/streamlit_app.py
+
 import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
